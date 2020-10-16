@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { FiPlus } from 'react-icons/fi';
 import '../styles/pages/orphanages-map.css';
 import { Map, TileLayer } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css';
 
-function OrphanageMap() {
+function OrphanagesMap() {
   return (
     <div id="page-map">
       <aside>
@@ -42,4 +42,4 @@ function OrphanageMap() {
   );
 }
 
-export default OrphanageMap;
+export default OrphanagesMap;

@@ -1,0 +1,22 @@
+#page-orphanage {
+  color: #4D6F80;
+  background: #CEDEE5;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 70px;
+}
+
+#page-orphanage .context {
+  background: #FFF;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+}
