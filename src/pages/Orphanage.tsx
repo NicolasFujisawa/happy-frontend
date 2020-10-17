@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import happyMapIcon from '../commons/utils/mapIcon';
 import SideBar from "../commons/components/Sidebar";
 import '../styles/pages/orphanage.css';
