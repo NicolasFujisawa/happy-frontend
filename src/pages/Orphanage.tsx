@@ -19,7 +19,7 @@ interface Orphanage {
   instructions: string;
   images: Array<{
     url: string;
-    id: number;
+    image: string;
   }>;
 }
 
@@ -35,7 +35,6 @@ export default function Orphanage() {
   useEffect(() => {
     api.get(`orphanages/${params.id}`).then(response => {
       setOrphanage(response.data);
-      console.log(response.data);
     });
   }, [params.id]);
 
@@ -53,14 +52,14 @@ export default function Orphanage() {
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
           <div className="images">
-            {orphanage.images.map((image, _index) => {
+            {orphanage.images.map((image, index) => {
               return (
                 <button 
-                  key={image.id}
-                  className={activeImageIndex === _index ? 'active' : ''}
+                  key={image.image}
+                  className={activeImageIndex === index ? 'active' : ''}
                   type="button"
                   onClick={() => {
-                    setActiveImageIndex(_index)
+                    setActiveImageIndex(index)
                   }}
                 >
                   <img src={image.url} alt={orphanage.name} />
